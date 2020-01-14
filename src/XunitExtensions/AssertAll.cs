@@ -28,7 +28,7 @@ namespace Xunit.Extensions
             }
 
             var errorMessage = string.Join("\n\n", errorMessages);
-            throw new XunitException($"The following conditions failed:\n\n{errorMessage}");
+            throw new XunitException($"The following conditions failed:\n\n{errorMessage}\n");
         }
     }
 }
